@@ -4,7 +4,6 @@ const fs = require('fs')
 const componentGenerater = require('./generator/component')
 const featureGenerater = require('./generator/feature')
 const hookGenerater = require('./generator/hook')
-const pageGenerater = require('./generator/page')
 const utilGenerater = require('./generator/util')
 
 module.exports = function (
@@ -51,6 +50,5 @@ module.exports = function (
   componentGenerater('component', plop)
   featureGenerater('feature', plop)
   hookGenerater('hook', plop)
-  pageGenerater('page', plop)
   utilGenerater('util', plop)
 }
